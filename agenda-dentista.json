@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "agenda-dentista-421721",
+  "private_key_id": "6e0e55e8d096741b980cc9e268860ff6a3d85115",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCjJLUBGY4iEiRs\nvXsNwHD9PuK/D5/z5Sf2JZS6UqjzcvI7Y+VLEsAwgu0RiVTdvb9LlnfG3Cwb30m0\naOd0zBoZ3ueb+vdXdyKTEa/ULxNvIm46SoVRshKreeuPRB5YqDveDcQ8gLndyhi6\n0fslsWHGaBU0ynDLdY0udQhzSQvVDhIVzhFY9sjfM+9ds5ELcc7m/+RQu9g/9T08\nFKIWYQYxZCRAZ7iOpKHOcrQzR/XB9bVqTdEWt4lg2UahVINBn/5uljsBmkLYor07\nYRMKUwtIGFHPvUGWcuzklZRwU0nPR3e7QTDabAm5Ld0xR3mOzwuSfAzLLPKGeOzR\nPsIefVuXAgMBAAECggEAAV8ionK7ji/G3J8vNKtkh8yKjX6tIpjPoDMqr/JX90wF\nG1i4qcvrj7zaD2avLvoUbKdENIjPWiCjdv/WylWY9pS4L8iJYdPfl4rzhn4q1Kle\nceEEg+5SV9y7jUXOV4J6lmBZQQT4CxRS5uczDFsUbl2bqAj3r846NKTJQGbh0ZW8\nPiOrT2c4ufj3wy3Cww7bvWBKosTq7PPRbF2dXSDu5hBVaLjJjpSXfmCygdYkytW3\nhqqkj6Lb8NJUUuIU+y6Zvnj1MD8D2+lAjF6pEzcncK8i5fBj39miKCIzCRIDXX8P\n7IsxfCIlXfPyUvIC/qbSFCgdd7u0DzxQUFwSUNcMIQKBgQDkICzGhhRl5p5pULvG\nkkZXRzbaGKvf7b8C3J1UE+wA3rYYKnT9tNt5leT+Iz+FHm+ajypHTVeIo+WO6HeV\n1571J+fPvxD+U+sDlkwM99F7E31aSHwAlTYkb2E5eqf/itBPQZrxdfrJx1pgpjU9\nY/+hzo2ghAyjUxZMlUzXo16q0QKBgQC3E97gZP1GEzV4+TYTgFC64jXAyEyC1dDE\nvcOgXWH1hxKl2IdGhwQgzSPVaHiVWlfw3Os29NpkUBubSD0qJ8JZJ7DmSWkpJAb1\nwVOKFEISXxTjg95g84ceDeVLCZ/v5XyJwwDVTz3pBEPLHM2AKBu8Awc4xtB+J5i6\n3mEbxUnp5wKBgGGWDfFiu+kXbV555cm9GxAM678CXMvvBQ3xV+/2kbeRje3qg59g\nNZ7ea1X3uB129qD0a06THEXcbr/iW/2ifmI7DuQExP024srnCWNmw5rVrILpjPom\n2kFd0AZpnOIo/JFa7DAsmvqkJ9o+X3oChAEwvc8TjeB0E47xMyzvuvhxAoGAI4tk\nFkUFN3m7RAV+jkK3adFJhmhdEnnY0pnVRWlb/4N+B10GxpaoIoYxktl5r+WedVEv\nCbh4PkmfUoKv/WNCxHSET/GozSgFgelLAt/0BAUZ1SJhJomhjiA8iFkSCE2R5F1L\n6B4+cuM1FlY9P8iJufMMj+VpzVR6vq02RWIEe7kCgYANdzqWz8HSTg1WzEtHDDmr\n83J3P5ojVMPgTHYeBxd9MhehJTD9j2NbdO9bOnlpRKQZEcAi6Rew/Y9jCf8om2f/\nM5gVPMgr7kBCh0TIuFPpsQ66ECY6jgoPa+eh6ylYiq3kZbQqNYzLYnhrE+2NDVlC\n5Kg68uWM/5RFsHBKBWzpOQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "agenda-dentista@agenda-dentista-421721.iam.gserviceaccount.com",
+  "client_id": "111297808530760044270",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/agenda-dentista%40agenda-dentista-421721.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
