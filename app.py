@@ -50,7 +50,36 @@ with tab2:
         ws.append_row(nova_linha)
             
         st.success("Agendamento Salvo")
+
+#---------------------------------------------------------------------------------------------------------------------
         
+# with tab3:
+
+    # filtro_cliente = st.selectbox('Cliente',df["Cliente"].unique())
+
+    # opcoes = df.query('Ano == @filtro_ano & Mês == @filtro_mes & Cliente == @filtro_cliente')
+    
+    # opcoes = opcoes.drop(columns=["Data","Ano","Mês"])
+    
+    # opcoesdelete = opcoes.index.tolist()
+    # col1, col2 = st.columns([1, 10])
+    
+    # with col1:
+    #     linha1 = st.selectbox("Selecionar linha", opcoesdelete)
+    
+    
+    
+    # with col2:
+    #     if st.button("EXCLUIR ENTRADA"):
+            
+    #         ws1: Worksheet = sh.get_worksheet(0)
+        
+    #         ws1.delete_rows(int(linha1) + 2)
+        
+    #         st.success("Entrada Excluída Com Sucesso!")
+
+    #     opcoes["Valor"] = opcoes["Valor"].apply(lambda x: f'R$ {x:,.2f}')
+    #     opcoes["Data Vencimento"] =pd.to_datetime(opcoes["Data Vencimento"]).dt.strftime('%d/%m/%Y')
 
 #---------------------------------------------------------------------------------------------------------------------
 
