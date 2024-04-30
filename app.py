@@ -14,7 +14,7 @@ tab1, tab2, tab3 = st.tabs(["Agenda","Marcar Atendimento","Editar Atendimento"])
 
 
 #---------------------------------------------------------------------------------------------------------------------
-#data sheet
+#dataframe Agenda
 
 gc = gs.service_account("agenda-dentista.json")
 url = 'https://docs.google.com/spreadsheets/d/10KkJC1pi90WPlcbPKzb2ZBTBj-hTyORAl0oL7Uz69DI/edit?usp=sharing'
@@ -26,11 +26,22 @@ df = pd.DataFrame(planilha[1:], columns=planilha[0])
 df["Data"] = pd.to_datetime(df["Data"]).dt.strftime("%d/%m/%Y")
 df["Hora"] = pd.to_datetime(df["Hora"]).dt.strftime("%H:%M")
 
+#---------------------------------------------------------------------------------------------------------------------
+#dataframe pacientes
 
 sh1 = gc.open_by_url(url)
 ws1 = sh.get_worksheet(1)
 planilha1 = ws1.get_all_values()
 df_paciente = pd.DataFrame(planilha1[1:], columns=planilha1[0])
+
+
+#---------------------------------------------------------------------------------------------------------------------
+#dataframe procedimentos
+
+sh2 = gc.open_by_url(url)
+ws2 = sh.get_worksheet(2)
+planilha2 = ws2.get_all_values()
+df_procedimento = pd.DataFrame(planilha2[1:], columns=planilha2[0])
 
 #---------------------------------------------------------------------------------------------------------------------
 #insert row logic
@@ -42,7 +53,7 @@ with tab2:
 
     entrada_hora = st.time_input("Hora",value=dt.time(8, 0))
 
-    entrada_procedimento = st.selectbox("Procedimento", df["Procedimento"].unique())
+    entrada_procedimento = st.selectbox("Procedimento", df_procedimento["Procedimento"].unique())
     
 
     if st.button("ADICIONAR"):
