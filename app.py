@@ -101,9 +101,13 @@ with tab2:
 #---------------------------------------------------------------------------------------------------------------------
 
 with tab1:
-    entrada_data_agenda = st.date_input("Selecione a Data","today",format= "DD/MM/YYYY")
-    entrada_data_agenda = entrada_data_agenda.strftime("%d/%m/%Y")
-    df_agenda = df.query('Data == @entrada_data_agenda')
+    entrada_data_inicio = st.date_input("Data Inicio","today",format= "DD/MM/YYYY")
+    entrada_data_inicio = entrada_data_inicio.strftime("%d/%m/%Y")
+    
+    entrada_data_fim = st.date_input("Data fim","today",format= "DD/MM/YYYY")
+    entrada_data_fim = entrada_data_fim.strftime("%d/%m/%Y")
+    
+    df_agenda = df.query('Data > @entrada_data_agenda and Data < @entrada_data_fim')
     
     st.table(df_agenda)
     
