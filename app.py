@@ -104,10 +104,10 @@ with tab1:
     entrada_data_inicio = st.date_input("Data Inicio","today",format= "DD/MM/YYYY")
     entrada_data_inicio = entrada_data_inicio.strftime("%d/%m/%Y")
     
-    entrada_data_fim = st.date_input("Data fim","today",format= "DD/MM/YYYY")
+    entrada_data_fim = st.date_input("Data Fim","today",format= "DD/MM/YYYY")
     entrada_data_fim = entrada_data_fim.strftime("%d/%m/%Y")
     
-    df_agenda = df.query('@entrada_data_agenda <= Data & <= @entrada_data_fim')
+    df_agenda = df.query('@entrada_data_inicio <= Data & <= @entrada_data_fim')
 
     
     st.table(df_agenda)
