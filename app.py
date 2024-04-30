@@ -30,7 +30,7 @@ df["Hora"] = pd.to_datetime(df["Hora"]).dt.strftime("%H:%M")
 sh1 = gc.open_by_url(url)
 ws1 = sh.get_worksheet(1)
 planilha1 = ws.get_all_values()
-df_paciente = pd.DataFrame(planilha[1:], columns=planilha[0])
+df_paciente = pd.DataFrame(planilha1[1:], columns=planilha1[0])
 
 #---------------------------------------------------------------------------------------------------------------------
 #insert row logic
