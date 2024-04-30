@@ -26,11 +26,17 @@ df = pd.DataFrame(planilha[1:], columns=planilha[0])
 df["Data"] = pd.to_datetime(df["Data"]).dt.strftime("%d/%m/%Y")
 df["Hora"] = pd.to_datetime(df["Hora"]).dt.strftime("%H:%M")
 
+
+sh1 = gc.open_by_url(url)
+ws1 = sh.get_worksheet(1)
+planilha1 = ws.get_all_values()
+df_paciente = pd.DataFrame(planilha[1:], columns=planilha[0])
+
 #---------------------------------------------------------------------------------------------------------------------
 #insert row logic
 
 with tab2:    
-    entrada_paciente= st.selectbox("Paciente",df['Paciente'].unique())
+    entrada_paciente= st.selectbox("Paciente",df_paciente['Paciente'].unique())
 
     entrada_data = st.date_input("Data da Consulta","today",format= "DD/MM/YYYY")
 
