@@ -29,7 +29,7 @@ df["Hora"] = pd.to_datetime(df["Hora"]).dt.strftime("%H:%M")
 
 sh1 = gc.open_by_url(url)
 ws1 = sh.get_worksheet(1)
-planilha1 = ws.get_all_values()
+planilha1 = ws1.get_all_values()
 df_paciente = pd.DataFrame(planilha1[1:], columns=planilha1[0])
 
 #---------------------------------------------------------------------------------------------------------------------
