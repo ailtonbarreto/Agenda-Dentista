@@ -40,7 +40,7 @@ with tab2:
 
     entrada_data = st.date_input("Data da Consulta","today",format= "DD/MM/YYYY")
 
-    entrada_hora = st.time_input("Hora",value="08:00")
+    entrada_hora = st.time_input("Hora",value=dt.time(8, 0))
 
     entrada_procedimento = st.selectbox("Procedimento", df["Procedimento"].unique())
     
