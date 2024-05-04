@@ -61,7 +61,7 @@ with tab2:
         entrada_data = entrada_data.strftime("%Y-%m-%d")
         entrada_hora = entrada_hora.strftime("%H:%M")
         
-        nova_linha = [entrada_data,entrada_paciente,entrada_hora, entrada_procedimento, "Agendado"]
+        nova_linha = [entrada_data, entrada_hora, entrada_paciente, entrada_procedimento, "Agendado"]
             
         
         ws.append_row(nova_linha)
