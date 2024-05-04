@@ -76,7 +76,7 @@ with tab3:
     filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
 
     opcoes = df.query('Paciente == @filtro_paciente ')
-    opcoes = opcoes.index(opcoes["Paciente"])
+    opcoes = opcoes.set_index("Paciente",inplace=True)
     
     opcoesdelete = opcoes.index.tolist()
     col1, col2 = st.columns([1, 10])
