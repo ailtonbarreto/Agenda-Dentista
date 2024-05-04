@@ -134,7 +134,7 @@ st.markdown(hideimagebutton,unsafe_allow_html=True)
 
 hidecontainerdataframe = """
     <style>
-    [class="stElementToolbar st-emotion-cache-13qcx58 e2wxzia1""]
+    [class="stElementToolbar st-emotion-cache-13qcx58 e2wxzia1"]
     {
     visibility: hidden;
     }
