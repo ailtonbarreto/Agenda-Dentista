@@ -69,14 +69,14 @@ with tab2:
         st.success("Agendamento Salvo")
 
 #---------------------------------------------------------------------------------------------------------------------
-        
+#Cancelar Agendamento
+   
 # with tab3:
 
-    # filtro_cliente = st.selectbox('Cliente',df["Cliente"].unique())
+    # filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
 
-    # opcoes = df.query('Ano == @filtro_ano & Mês == @filtro_mes & Cliente == @filtro_cliente')
+    # opcoes = df.query('Paciente == @filtro_paciente ')
     
-    # opcoes = opcoes.drop(columns=["Data","Ano","Mês"])
     
     # opcoesdelete = opcoes.index.tolist()
     # col1, col2 = st.columns([1, 10])
