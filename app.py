@@ -147,7 +147,7 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 retangulos = """
     <style>
-    [data-testid="stVerticalBlockBorderWrapper"]
+    [class="stTabs st-emotion-cache-0 esjhkag0"]
     {
     background-color: #FFFFFF;
     }
