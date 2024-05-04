@@ -77,7 +77,7 @@ with tab3:
     
     filtro_data = st.date_input("Data da Consulta","today",format= "DD/MM/YYYY")
 
-    opcoes = df.query('Paciente == @filtro_paciente ')
+    opcoes = df.query('Paciente == @filtro_paciente & Data == @filtro_data ')
     
     
     opcoesdelete = opcoes.index.tolist()
