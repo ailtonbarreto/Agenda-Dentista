@@ -95,7 +95,7 @@ with tab3:
         
             st.success("Entrada Excluída Com Sucesso!")
 
-    st.dataframe(opcoes,use_container_width=True,hide_index=True)
+    st.dataframe(opcoes,use_container_width=True)
 
 #---------------------------------------------------------------------------------------------------------------------
 
