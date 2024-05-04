@@ -95,8 +95,7 @@ with tab3:
         
             st.success("Entrada Excluída Com Sucesso!")
 
-    #     opcoes["Valor"] = opcoes["Valor"].apply(lambda x: f'R$ {x:,.2f}')
-    #     opcoes["Data Vencimento"] =pd.to_datetime(opcoes["Data Vencimento"]).dt.strftime('%d/%m/%Y')
+    st.dataframe(opcoesdelete,use_container_width=True,hide_index=True)
 
 #---------------------------------------------------------------------------------------------------------------------
 
