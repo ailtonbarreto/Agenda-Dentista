@@ -84,7 +84,7 @@ with tab3:
     with col1:
         linha1 = st.selectbox("Selecionar linha", opcoesdelete)
     
-    opcoes = opcoes.set_index("Paciente",inplace=True)
+    
     
     with col2:
         if st.button("EXCLUIR ENTRADA"):
@@ -95,6 +95,7 @@ with tab3:
         
             st.success("Atendimento Excluído Com Sucesso!")
 
+    opcoes = opcoes.set_index("Paciente",inplace=True)
     st.dataframe(opcoes,use_container_width=True)
 
 #---------------------------------------------------------------------------------------------------------------------
