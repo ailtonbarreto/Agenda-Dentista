@@ -149,7 +149,7 @@ retangulos = """
     <style>
     [class="stTabs st-emotion-cache-0 esjhkag0"]
     {
-    background-color: #FFFFFF;
+    background-color: #000000;
     }
     </style>
 """
