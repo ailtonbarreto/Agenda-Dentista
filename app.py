@@ -69,7 +69,7 @@ with tab2:
         st.success("Agendamento Salvo")
 
 #---------------------------------------------------------------------------------------------------------------------
-#Cancelar Agendamento
+#Delete Row
    
 with tab3:
 
