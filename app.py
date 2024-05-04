@@ -95,7 +95,7 @@ with tab3:
         
             st.success("Atendimento Excluído Com Sucesso!")
 
-    opcoes = opcoes.set_index("Paciente",inplace=True)
+    opcoes = opcoes.set_index("Hora",inplace=True)
     st.dataframe(opcoes,use_container_width=True)
 
 #---------------------------------------------------------------------------------------------------------------------
