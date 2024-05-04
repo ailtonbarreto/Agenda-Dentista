@@ -71,11 +71,11 @@ with tab2:
 #---------------------------------------------------------------------------------------------------------------------
 #Cancelar Agendamento
    
-# with tab3:
+with tab3:
 
-    # filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
+    filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
 
-    # opcoes = df.query('Paciente == @filtro_paciente ')
+    opcoes = df.query('Paciente == @filtro_paciente ')
     
     
     # opcoesdelete = opcoes.index.tolist()
