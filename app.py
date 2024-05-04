@@ -124,7 +124,7 @@ hideimagebutton = """
     <style>
     [data-testid="StyledFullScreenButton"]
     {
-    background: none;
+    visibility: hidden;
     }
     </style>
 """
