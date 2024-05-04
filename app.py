@@ -143,3 +143,14 @@ hidecontainerdataframe = """
 """
 st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
+
+
+retangulos = """
+    <style>
+    [data-testid="stVerticalBlockBorderWrapper"]
+    {
+    background-color: #FFFFFF;
+    }
+    </style>
+"""
+st.markdown(retangulos,unsafe_allow_html=True)
