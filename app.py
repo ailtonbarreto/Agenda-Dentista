@@ -60,10 +60,10 @@ with tab2:
         ws: Worksheet = sh.get_worksheet(0)
         entrada_data = entrada_data.strftime("%Y-%m-%d")
         entrada_hora = entrada_hora.strftime("%H:%M")
-        # Criar uma nova linha com os dados inseridos
+        
         nova_linha = [entrada_data,entrada_paciente,entrada_hora, entrada_procedimento, "Agendado"]
             
-        # Adicionar a nova linha à planilha
+        
         ws.append_row(nova_linha)
             
         st.success("Agendamento Salvo")
@@ -78,7 +78,7 @@ with tab3:
     filtro_data = st.date_input("Data da Consulta","today","DD/MM/YYYY")
     filtro_data = filtro_data.strftime("%Y-%m-%d")
 
-    opcoes = df.query('Paciente == @filtro_paciente & Data == @filtro_data ')
+    opcoes = df.query('Paciente == @filtro_paciente & Data == @filtro_data')
     
     
     opcoesdelete = opcoes.index.tolist()
