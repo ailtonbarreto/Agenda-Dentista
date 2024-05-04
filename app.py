@@ -99,6 +99,7 @@ with tab3:
     opcoes = opcoes.set_index("Paciente",inplace=False)
     
     st.dataframe(opcoes,use_container_width=True)
+    st.write(filtro_data)
 
 #---------------------------------------------------------------------------------------------------------------------
 
