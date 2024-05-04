@@ -88,6 +88,7 @@ with tab3:
     
 
     with col1:
+        opcoes = opcoes.set_index("Paciente",inplace=False)
         st.dataframe(opcoes,use_container_width=True)
         if st.button("EXCLUIR ATENDIMENTO"):
             
@@ -97,7 +98,7 @@ with tab3:
         
             st.success("Atendimento Excluído Com Sucesso!")
 
-    opcoes = opcoes.set_index("Paciente",inplace=False)
+    
     
     
 
