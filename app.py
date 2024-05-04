@@ -98,7 +98,7 @@ with tab3:
 
     opcoes = opcoes.set_index("Paciente",inplace=False)
     
-    with col2:
+    with col1:
         st.dataframe(opcoes,use_container_width=True)
     
 
