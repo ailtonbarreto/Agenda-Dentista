@@ -86,8 +86,8 @@ with tab3:
     
     linha1 = opcoesdelete
     
-    
-    with col2:
+
+    with col1:
         if st.button("EXCLUIR ATENDIMENTO"):
             
             ws1: Worksheet = sh.get_worksheet(0)
@@ -98,7 +98,8 @@ with tab3:
 
     opcoes = opcoes.set_index("Paciente",inplace=False)
     
-    st.dataframe(opcoes,use_container_width=True)
+    with col2:
+        st.dataframe(opcoes,use_container_width=True)
     
 
 #---------------------------------------------------------------------------------------------------------------------
