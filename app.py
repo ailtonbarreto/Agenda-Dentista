@@ -10,7 +10,7 @@ from gspread import Worksheet
 st.set_page_config(layout="wide",initial_sidebar_state='expanded',page_icon='🦷',page_title="Agenda Dentista")
 st.sidebar.image("tooth.png")
 
-tab1, tab2, tab3 = st.tabs(["Agenda","Marcar Atendimento","Editar Atendimento"])
+tab1, tab2, tab3 = st.tabs(["Agenda","Marcar Atendimento","Cancelar Atendimento"])
 
 
 #---------------------------------------------------------------------------------------------------------------------
