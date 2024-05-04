@@ -145,12 +145,3 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 
 
-retangulos = """
-    <style>
-    [class="stTabs st-emotion-cache-0 esjhkag0"]
-    {
-    background-color: #000000;
-    }
-    </style>
-"""
-st.markdown(retangulos,unsafe_allow_html=True)
