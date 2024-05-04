@@ -75,7 +75,7 @@ with tab3:
 
     filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
 
-    opcoes = df.query('Paciente == @filtro_paciente ')
+    opcoes = df.query('Paciente == @filtro_paciente ').index="Paciente"
     
     
     opcoesdelete = opcoes.index.tolist()
@@ -93,7 +93,7 @@ with tab3:
         
             ws1.delete_rows(int(linha1) + 2)
         
-            st.success("Entrada Excluída Com Sucesso!")
+            st.success("Atendimento Excluído Com Sucesso!")
 
     st.dataframe(opcoes,use_container_width=True)
 
