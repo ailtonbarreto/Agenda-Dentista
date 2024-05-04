@@ -108,7 +108,7 @@ with tab1:
     entrada_data_fim = entrada_data_fim.strftime("%d/%m/%Y")
     
     df_agenda = df.query('@entrada_data_inicio <= Data and Data <= @entrada_data_fim')
-    st.table(df_agenda.to_table(index=False))
+    df_agenda = df_agenda.reset_index(drop=True)
 
 
     
