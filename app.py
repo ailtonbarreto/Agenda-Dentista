@@ -117,7 +117,15 @@ with tab1:
     df_agenda = df.query('Data == @entrada_data_inicio')
     st.dataframe(df_agenda,use_container_width=True,hide_index=True)
 
-
+#---------------------------------------------------------------------------------------------------------------------
+#Style
     
-    
-    
+hideimagebutton = """
+    <style>
+    [data-testid="StyledFullScreenButton"]
+    {
+    background: none;
+    }
+    </style>
+"""
+st.markdown(hideimagebutton,unsafe_allow_html=True)
