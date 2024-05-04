@@ -75,8 +75,8 @@ with tab3:
 
     filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
     
-    filtro_data = st.date_input("Data da Consulta","today",format="%Y/%m/%d")
-    # filtro_data = filtro_data.strftime("%Y/%m/%d")
+    filtro_data = st.date_input("Data da Consulta","today",format="%Y-%m-%d")
+    filtro_data = filtro_data.strftime("%Y/%m/%d")
 
     opcoes = df.query('Paciente == @filtro_paciente')
     
