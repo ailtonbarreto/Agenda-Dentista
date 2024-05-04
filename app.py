@@ -82,7 +82,7 @@ with tab3:
     
     
     opcoesdelete = opcoes.first_valid_index()
-    col1, = st.columns()
+    col1, = st.columns(1)
     
     linha1 = opcoesdelete
     
