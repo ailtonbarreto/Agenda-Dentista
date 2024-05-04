@@ -78,8 +78,8 @@ with tab3:
     opcoes = df.query('Paciente == @filtro_paciente ')
     
     
-    # opcoesdelete = opcoes.index.tolist()
-    # col1, col2 = st.columns([1, 10])
+    opcoesdelete = opcoes.index.tolist()
+    col1, col2 = st.columns([1, 10])
     
     # with col1:
     #     linha1 = st.selectbox("Selecionar linha", opcoesdelete)
