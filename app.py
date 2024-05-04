@@ -81,13 +81,11 @@ with tab3:
     opcoesdelete = opcoes.index.tolist()
     col1, col2 = st.columns([1, 10])
     
-    with col1:
-        linha1 = st.selectbox("Selecionar linha", opcoesdelete)
-    
+    linha1 = opcoesdelete
     
     
     with col2:
-        if st.button("EXCLUIR ENTRADA"):
+        if st.button("EXCLUIR ATENDIMENTO"):
             
             ws1: Worksheet = sh.get_worksheet(0)
         
