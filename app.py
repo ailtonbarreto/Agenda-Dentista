@@ -86,14 +86,14 @@ with tab3:
     
     
     
-    # with col2:
-    #     if st.button("EXCLUIR ENTRADA"):
+    with col2:
+        if st.button("EXCLUIR ENTRADA"):
             
-    #         ws1: Worksheet = sh.get_worksheet(0)
+            ws1: Worksheet = sh.get_worksheet(0)
         
-    #         ws1.delete_rows(int(linha1) + 2)
+            ws1.delete_rows(int(linha1) + 2)
         
-    #         st.success("Entrada Excluída Com Sucesso!")
+            st.success("Entrada Excluída Com Sucesso!")
 
     #     opcoes["Valor"] = opcoes["Valor"].apply(lambda x: f'R$ {x:,.2f}')
     #     opcoes["Data Vencimento"] =pd.to_datetime(opcoes["Data Vencimento"]).dt.strftime('%d/%m/%Y')
