@@ -81,7 +81,7 @@ with tab3:
     opcoes = df.query('Paciente == @filtro_paciente & Data == @filtro_data')
     
     
-    opcoesdelete = opcoes.index
+    opcoesdelete = opcoes.first_valid_index()
     col1, col2 = st.columns([1, 10])
     
     linha1 = opcoesdelete
