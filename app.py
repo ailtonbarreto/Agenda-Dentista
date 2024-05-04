@@ -8,10 +8,12 @@ from gspread import Worksheet
 #page config
 
 st.set_page_config(layout="wide",initial_sidebar_state='expanded',page_icon='🦷',page_title="Agenda Dentista")
-st.sidebar.image("tooth.png")
+
 
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html = True)
+    
+st.sidebar.image("tooth.png")
 
 tab1, tab2, tab3 = st.tabs(["Agenda","Marcar Atendimento","Cancelar Atendimento"])
 
