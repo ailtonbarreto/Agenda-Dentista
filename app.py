@@ -115,7 +115,8 @@ with tab1:
     entrada_data_inicio = entrada_data_inicio.strftime("%d/%m/%Y")
     
        
-    df_agenda = df.query('Data == @entrada_data_inicio')
+    df_agenda = df.query('Data == @entrada_data_inicio').sort_values('Hora')
+    
     st.dataframe(df_agenda,use_container_width=True,hide_index=True)
 
 #---------------------------------------------------------------------------------------------------------------------
