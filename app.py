@@ -15,7 +15,7 @@ with open("style.css") as f:
  
  
 st.sidebar.text("Teste")    
-st.sidebar.image("tooth.png")
+st.sidebar.image("logo.png")
 st.sidebar.divider()
 st.sidebar.text("Teste")
 
