@@ -56,7 +56,7 @@ with tab2:
     entrada_procedimento = st.selectbox("Procedimento", df_procedimento["Procedimento"].unique())
     
 
-    if st.button("ADICIONAR"):
+    if st.button("AGENDAR"):
         ws: Worksheet = sh.get_worksheet(0)
         entrada_data = entrada_data.strftime("%Y-%m-%d")
         entrada_hora = entrada_hora.strftime("%H:%M")
@@ -106,10 +106,8 @@ with tab1:
     entrada_data_inicio = st.date_input("Data Inicio","today",format= "DD/MM/YYYY")
     entrada_data_inicio = entrada_data_inicio.strftime("%d/%m/%Y")
     
-    entrada_data_fim = st.date_input("Data Fim","today",format= "DD/MM/YYYY")
-    entrada_data_fim = entrada_data_fim.strftime("%d/%m/%Y")
-    
-    df_agenda = df.query('@entrada_data_inicio <= Data and Data <= @entrada_data_fim')
+       
+    df_agenda = df.query('Data == @entrada_data_inicio')
     st.dataframe(df_agenda,use_container_width=True,hide_index=True)
 
 
