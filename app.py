@@ -54,7 +54,8 @@ df_procedimento = pd.DataFrame(planilha2[1:], columns=planilha2[0])
 #---------------------------------------------------------------------------------------------------------------------
 #insert row logic
 
-with tab2:    
+with tab2:
+    st.title("📝 Agendar Atendimento",anchor=False)    
     entrada_paciente= st.selectbox("Paciente",df_paciente['Paciente'].unique())
 
     entrada_data = st.date_input("Data da Consulta","today",format= "DD/MM/YYYY")
