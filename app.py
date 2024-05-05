@@ -114,7 +114,7 @@ with tab1:
         if status == "Ok":
             return "Agendado"
         elif status == "Atendido":
-            pass
+            status == "Atendido"
         
     df["Status"] = df.apply(lambda row: definir_status(row["Status"]), axis= 1)
     st.table(df)
