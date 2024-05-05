@@ -109,12 +109,13 @@ with tab3:
 
 #---------------------------------------------------------------------------------------------------------------------
 #funcao definir atendimento
-# with tab1:
-#     if df["Status"] == "Agendado":
-#         df["Status"]
-#     elif df["Status"] == "Ok":
-#         df["Status"] == "Atendido"
-#     st.table(df)
+with tab1:
+    def definir_status(status):
+        if status == "Ok":
+            return "Agendado"
+        elif status == "Atendido":
+            pass
+        st.table(df)
 
 
 #---------------------------------------------------------------------------------------------------------------------
