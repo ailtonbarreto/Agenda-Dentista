@@ -112,7 +112,7 @@ with tab3:
 #---------------------------------------------------------------------------------------------------------------------
 
 with tab1:
-    st.title("📔 Agenda do Dia",anchor=False)
+    st.title("📘 Agenda do Dia",anchor=False)
     entrada_data_inicio = st.date_input("Data Inicio","today",format= "DD/MM/YYYY")
     entrada_data_inicio = entrada_data_inicio.strftime("%d/%m/%Y")
     
