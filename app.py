@@ -99,13 +99,13 @@ with tab3:
     with col1:
         opcoes = opcoes.set_index("Paciente",inplace=False)
         st.dataframe(opcoes,use_container_width=True)
-        if st.button("EXCLUIR ATENDIMENTO"):
+        if st.button("CANCELADO ATENDIMENTO"):
             
             ws1: Worksheet = sh.get_worksheet(0)
         
             ws1.delete_rows(int(linha1) + 2)
         
-            st.success("Atendimento Excluído Com Sucesso!")
+            st.success("Atendimento Cancelado Com Sucesso!")
 
 #---------------------------------------------------------------------------------------------------------------------
 #funcao definir atendimento
