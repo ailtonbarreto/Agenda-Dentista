@@ -81,7 +81,7 @@ with tab2:
 #Delete Row
    
 with tab3:
-
+    st.title("❌ Cancelar Atendimento",anchor=False)
     filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
     
     filtro_data = st.date_input("Data da Consultas","today",format="DD/MM/YYYY")
