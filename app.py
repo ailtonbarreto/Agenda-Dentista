@@ -110,6 +110,7 @@ with tab3:
  
 
 #---------------------------------------------------------------------------------------------------------------------
+#Agenda do dia
 
 with tab1:
     st.title("📘 Agenda do Dia",anchor=False)
@@ -120,7 +121,9 @@ with tab1:
     df_agenda = df.query('Data == @entrada_data_inicio').sort_values('Hora')
     
     st.dataframe(df_agenda,use_container_width=True,hide_index=True)
-
+    st.checkbox("checkbox")
+#---------------------------------------------------------------------------------------------------------------------
+#Cadastro de pacientes
 
 with tab4:
     st.title("🚧 Em Construção",anchor=False)
