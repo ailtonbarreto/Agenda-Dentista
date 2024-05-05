@@ -110,6 +110,10 @@ with tab3:
 #---------------------------------------------------------------------------------------------------------------------
 #funcao definir atendimento
 with tab1:
+    if df["Status"] == "Agendado":
+        df["Status"]
+    elif df["Status"] == "Ok":
+        df["Status"] == "Atendido"
     st.table(df)
 
 
