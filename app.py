@@ -117,7 +117,7 @@ with tab1:
             return "Agendado"
         
     df["Status"] = df.apply(lambda row: definir_status(row["Status"]), axis= 1)
-    st.table(df)
+   
 
 
 #---------------------------------------------------------------------------------------------------------------------
