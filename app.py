@@ -175,7 +175,7 @@ container = """
     <style>
     [id="tabs-bui4-tabpanel-1"]
     {
-    background-color: #ffffff;
+    background-color: black;
     }
     </style>
 """
