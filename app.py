@@ -171,7 +171,7 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 
 
-container = """
+containertab2 = """
     <style>
     [id="tabs-bui4-tabpanel-1"]
     {
@@ -181,4 +181,17 @@ container = """
     }
     </style>
 """
-st.markdown(container,unsafe_allow_html=True)
+st.markdown(containertab2,unsafe_allow_html=True)
+
+
+
+removerlinha = """
+    <style>
+    [data-baseweb="tab-border"]
+    {
+    background-color: blue;
+    padding: 20px;
+    }
+    </style>
+"""
+st.markdown(removerlinha,unsafe_allow_html=True)
