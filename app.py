@@ -173,7 +173,7 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 container = """
     <style>
-    [data-testid="stVerticalBlock"]
+    [id="tabs-bui4-tabpanel-1"]
     {
     background-color: #ffffff;
     }
