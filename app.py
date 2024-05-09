@@ -175,7 +175,7 @@ containertab2 = """
     <style>
     [id="tabs-bui4-tabpanel-1"]
     {
-    background-color: blue;
+    background-color: #0C2C2C;
     padding: 20px;
     border-radius: 12px;
     }
