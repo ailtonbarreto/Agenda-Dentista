@@ -176,15 +176,15 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 
 
-container = """
-    <style>
-    [data-testid="stHorizontalBlock"]
-    {
-    background-color: #0C2C2C;
-    padding: 20px;
-    border-radius: 12px;
-    }
-    </style>
-"""
-st.markdown(container,unsafe_allow_html=True)
+# container = """
+#     <style>
+#     [data-testid="stHorizontalBlock"]
+#     {
+#     background-color: #0C2C2C;
+#     padding: 20px;
+#     border-radius: 12px;
+#     }
+#     </style>
+# """
+# st.markdown(container,unsafe_allow_html=True)
 
