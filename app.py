@@ -189,8 +189,7 @@ removerlinha = """
     <style>
     [data-baseweb="tab-border"]
     {
-    background-color: blue;
-    padding: 20px;
+    visibility: hidden;   
     }
     </style>
 """
