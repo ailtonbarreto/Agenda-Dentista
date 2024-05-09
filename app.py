@@ -177,6 +177,7 @@ container = """
     {
     background-color: blue;
     padding: 20px;
+    border-radius: 12px;
     }
     </style>
 """
