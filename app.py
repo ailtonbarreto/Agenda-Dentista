@@ -56,27 +56,31 @@ df_procedimento = pd.DataFrame(planilha2[1:], columns=planilha2[0])
 #insert row logic
 
 with tab2:
-    st.subheader("📝 Agendar Atendimento",anchor=False)    
-    entrada_paciente= st.selectbox("Paciente",df_paciente['Paciente'].unique())
-
-    entrada_data = st.date_input("Data da Consulta","today",format= "DD/MM/YYYY")
-
-    entrada_hora = st.time_input("Hora",value=dt.time(8, 0))
-
-    entrada_procedimento = st.selectbox("Procedimento", df_procedimento["Procedimento"].unique())
     
+    col1, = st.columns(1)
+    
+    with col1:
+        st.subheader("📝 Agendar Atendimento",anchor=False)    
+        entrada_paciente= st.selectbox("Paciente",df_paciente['Paciente'].unique())
 
-    if st.button("AGENDAR"):
-        ws: Worksheet = sh.get_worksheet(0)
-        entrada_data = entrada_data.strftime("%Y-%m-%d")
-        entrada_hora = entrada_hora.strftime("%H:%M")
+        entrada_data = st.date_input("Data da Consulta","today",format= "DD/MM/YYYY")
+
+        entrada_hora = st.time_input("Hora",value=dt.time(8, 0))
+
+        entrada_procedimento = st.selectbox("Procedimento", df_procedimento["Procedimento"].unique())
         
-        nova_linha = [entrada_data, entrada_hora, entrada_paciente, entrada_procedimento, "Agendado"]
+
+        if st.button("AGENDAR"):
+            ws: Worksheet = sh.get_worksheet(0)
+            entrada_data = entrada_data.strftime("%Y-%m-%d")
+            entrada_hora = entrada_hora.strftime("%H:%M")
             
-        
-        ws.append_row(nova_linha)
+            nova_linha = [entrada_data, entrada_hora, entrada_paciente, entrada_procedimento, "Agendado"]
+                
             
-        st.success("Agendamento Salvo")
+            ws.append_row(nova_linha)
+                
+            st.success("Agendamento Salvo")
 
 #---------------------------------------------------------------------------------------------------------------------
 #Delete Row
