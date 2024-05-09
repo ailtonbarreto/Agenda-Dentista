@@ -17,7 +17,7 @@ with open("style.css") as f:
 st.sidebar.image("logo.png")
 st.sidebar.divider()
 
-st.title("Gerenciamento de Atendimentos 👩‍🔬",anchor=False)
+st.title("Gerenciamento de Atendimentos 👩‍⚕️",anchor=False)
 
 tab1, tab2, tab3, tab4 = st.tabs(["Agenda","Marcar Atendimento","Cancelar Atendimento","Cadastro De Pacientes"])
 
