@@ -176,6 +176,7 @@ container = """
     [id="tabs-bui4-tabpanel-1"]
     {
     background-color: blue;
+    padding: 20px;
     }
     </style>
 """
