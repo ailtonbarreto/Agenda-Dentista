@@ -176,7 +176,7 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 
 
-containertab2 = """
+container = """
     <style>
     [data-testid="stHorizontalBlock"]
     {
@@ -186,5 +186,5 @@ containertab2 = """
     }
     </style>
 """
-st.markdown(containertab2,unsafe_allow_html=True)
+st.markdown(container,unsafe_allow_html=True)
 
