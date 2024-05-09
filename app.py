@@ -175,7 +175,7 @@ container = """
     <style>
     [data-testid="stVerticalBlockBorderWrapper"]
     {
-    color: white;
+    background-color: #ffffff;
     }
     </style>
 """
