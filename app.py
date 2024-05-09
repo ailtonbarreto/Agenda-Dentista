@@ -178,7 +178,7 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 containertab2 = """
     <style>
-    [data-testid="stVerticalBlock"]
+    [data-testid="stVerticalBlockBorderWrapper"]
     {
     background-color: #0C2C2C;
     padding: 20px;
