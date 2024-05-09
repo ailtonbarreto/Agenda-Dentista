@@ -19,7 +19,7 @@ st.sidebar.divider()
 
 st.title("Gerenciamento de Atendimentos 👩‍🔬",anchor=False)
 
-tab1, tab2, tab3, tab4 = st.tabs(["Agenda","Marcar Atendimento","Cancelar Atendimento","Cadastro Paciente"])
+tab1, tab2, tab3, tab4 = st.tabs(["Agenda","Marcar Atendimento","Cancelar Atendimento","Cadastro De Pacientes"])
 
 
 #---------------------------------------------------------------------------------------------------------------------
@@ -56,7 +56,7 @@ df_procedimento = pd.DataFrame(planilha2[1:], columns=planilha2[0])
 #insert row logic
 
 with tab2:
-    st.title("📝 Agendar Atendimento",anchor=False)    
+    st.subheader("📝 Agendar Atendimento",anchor=False)    
     entrada_paciente= st.selectbox("Paciente",df_paciente['Paciente'].unique())
 
     entrada_data = st.date_input("Data da Consulta","today",format= "DD/MM/YYYY")
@@ -82,7 +82,7 @@ with tab2:
 #Delete Row
    
 with tab3:
-    st.title("❌ Cancelar Atendimento",anchor=False)
+    st.subheader("❌ Cancelar Atendimento",anchor=False)
     filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
     
     filtro_data = st.date_input("Data da Consultas","today",format="DD/MM/YYYY")
@@ -125,7 +125,7 @@ with tab1:
 #Agenda do dia
 
 with tab1:
-    st.title("📘 Agenda do Dia",anchor=False)
+    st.subheader("📘 Agenda do Dia",anchor=False)
     entrada_data_inicio = st.date_input("Data Inicio","today",format= "DD/MM/YYYY")
     entrada_data_inicio = entrada_data_inicio.strftime("%d/%m/%Y")
     
