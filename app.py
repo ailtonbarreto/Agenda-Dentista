@@ -185,12 +185,12 @@ st.markdown(containertab2,unsafe_allow_html=True)
 
 
 
-removerlinha = """
-    <style>
-    [data-baseweb="tab-border"]
-    {
-    visibility: hidden;   
-    }
-    </style>
-"""
-st.markdown(removerlinha,unsafe_allow_html=True)
+# removerlinha = """
+#     <style>
+#     [data-baseweb="tab-border"]
+#     {
+#     visibility: hidden;   
+#     }
+#     </style>
+# """
+# st.markdown(removerlinha,unsafe_allow_html=True)
