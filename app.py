@@ -171,3 +171,12 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 
 
+container = """
+    <style>
+    [data-testid="stVerticalBlock"]
+    {
+    color: white;
+    }
+    </style>
+"""
+st.markdown(container,unsafe_allow_html=True)
