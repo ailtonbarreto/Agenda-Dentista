@@ -178,7 +178,7 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 containertab2 = """
     <style>
-    [class="st-emotion-cache-vlkb6b e1f1d6gn2"]
+    [class="st-emotion-cache-1wmy9hl e1f1d6gn1"]
     {
     background-color: #0C2C2C;
     padding: 20px;
