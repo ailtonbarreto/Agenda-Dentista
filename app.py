@@ -173,7 +173,7 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 container = """
     <style>
-    [data-testid="stVerticalBlock"]
+    [data-testid="stVerticalBlockBorderWrapper"]
     {
     color: white;
     }
