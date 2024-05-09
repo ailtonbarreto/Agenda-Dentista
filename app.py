@@ -129,14 +129,19 @@ with tab1:
 #Agenda do dia
 
 with tab1:
-    st.subheader("📘 Agenda do Dia",anchor=False)
-    entrada_data_inicio = st.date_input("Data Inicio","today",format= "DD/MM/YYYY")
-    entrada_data_inicio = entrada_data_inicio.strftime("%d/%m/%Y")
     
-       
-    df_agenda = df.query('Data == @entrada_data_inicio').sort_values('Hora')
+    col1, = st.columns(1)
     
-    st.dataframe(df_agenda,use_container_width=True,hide_index=True)
+    with col1:
+    
+        st.subheader("📘 Agenda do Dia",anchor=False)
+        entrada_data_inicio = st.date_input("Data Inicio","today",format= "DD/MM/YYYY")
+        entrada_data_inicio = entrada_data_inicio.strftime("%d/%m/%Y")
+        
+        
+        df_agenda = df.query('Data == @entrada_data_inicio').sort_values('Hora')
+        
+        st.dataframe(df_agenda,use_container_width=True,hide_index=True)
 
 
 #---------------------------------------------------------------------------------------------------------------------
@@ -183,14 +188,3 @@ containertab2 = """
 """
 st.markdown(containertab2,unsafe_allow_html=True)
 
-
-
-# removerlinha = """
-#     <style>
-#     [data-baseweb="tab-border"]
-#     {
-#     visibility: hidden;   
-#     }
-#     </style>
-# """
-# st.markdown(removerlinha,unsafe_allow_html=True)
