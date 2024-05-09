@@ -16,7 +16,7 @@ with open("style.css") as f:
     
 st.sidebar.image("logo.png")
 st.sidebar.divider()
-st.sidebar.text("Teste")
+
 
 tab1, tab2, tab3, tab4 = st.tabs(["Agenda","Marcar Atendimento","Cancelar Atendimento","Cadastro Paciente"])
 
