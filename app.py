@@ -134,9 +134,6 @@ with tab1:
     st.dataframe(df_agenda,use_container_width=True,hide_index=True)
 
 
-
-
-
 #---------------------------------------------------------------------------------------------------------------------
 #Cadastro de pacientes
 
