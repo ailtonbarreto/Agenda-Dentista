@@ -178,7 +178,7 @@ st.markdown(hidecontainerdataframe,unsafe_allow_html=True)
 
 containertab2 = """
     <style>
-    [id="tabs-bui4-tabpanel-1"]
+    [id="tabs-bui4-tabpanel"]
     {
     background-color: #0C2C2C;
     padding: 20px;
