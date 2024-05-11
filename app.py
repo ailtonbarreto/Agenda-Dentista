@@ -157,12 +157,13 @@ with tab1:
 
 with tab4:
     st.title("🚧 Cadastrar Paciente",anchor=False)
+    entrada_novopaciente = st.text_input("Nome do Paciente")
+    Idade_paciente = st.number_input("Idade Do Paciente",value=None)
+    entrada_fonepaciente = st.number_input("Telefone Do Paciente",value=None)
+    
     if st.button("CADASTRAR"):
         ws: Worksheet = sh.get_worksheet(1)
-        entrada_novopaciente = st.text_input("Nome do Paciente")
-        Idade_paciente = st.number_input("Idade Do Paciente",value=None)
-        entrada_fonepaciente = st.number_input("Telefone Do Paciente",value=None)
-            
+        
         novo_paciente = [entrada_novopaciente, entrada_fonepaciente]
                 
             
