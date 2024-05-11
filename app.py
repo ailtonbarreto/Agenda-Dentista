@@ -160,13 +160,13 @@ with tab4:
     with col1:
         st.subheader("🖥 Cadastrar Paciente",anchor=False)
         entrada_novopaciente = st.text_input("Nome do Paciente")
-        Idade_paciente = st.number_input("Idade Do Paciente",value=None)
+        Idade_paciente = st.number_input("Idade Do Paciente",value=None,format="%.0f")
         entrada_fonepaciente = st.number_input("Telefone Do Paciente",value=None)
         
         if st.button("CADASTRAR"):
             ws: Worksheet = sh.get_worksheet(1)
             
-            novo_paciente = [entrada_novopaciente, entrada_fonepaciente]
+            novo_paciente = [entrada_novopaciente.upper(), entrada_fonepaciente]
                     
                 
             ws.append_row(novo_paciente)
