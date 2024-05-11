@@ -16,8 +16,14 @@ st.set_page_config(layout="wide",initial_sidebar_state='expanded',page_icon='�
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html = True)
  
+col1, col2 = st.columns([1,1])
 
-st.title("Gerenciamento de Atendimentos 👩‍⚕️",anchor=False)
+with col1:
+    st.image("logo.png")
+
+
+with col2:
+    st.title("Gerenciamento de Atendimentos 👩‍⚕️",anchor=False)
 
 tab1, tab2, tab3, tab4 = st.tabs(["Agenda do Dia","Agendar Atendimento","Cancelar Atendimento","Cadastro De Pacientes"])
 
@@ -153,16 +159,6 @@ with tab4:
 #---------------------------------------------------------------------------------------------------------------------
 #Style
     
-hideimagebutton = """
-    <style>
-    [data-testid="StyledFullScreenButton"]
-    {
-    visibility: hidden;
-    }
-    </style>
-"""
-st.markdown(hideimagebutton,unsafe_allow_html=True)
-
 
 hidecontainerdataframe = """
     <style>
