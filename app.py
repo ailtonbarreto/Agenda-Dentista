@@ -163,12 +163,12 @@ with tab4:
         Idade_paciente = st.number_input("Idade Do Paciente",value=None)
         entrada_fonepaciente = st.number_input("Telefone Do Paciente",value=None)
             
-        nova_linha = [entrada_novopaciente, entrada_fonepaciente]
+        novo_paciente = [entrada_novopaciente, entrada_fonepaciente]
                 
             
-        ws.append_row(nova_linha)
+        ws.append_row(novo_paciente)
                 
-        st.success("Agendamento Salvo")
+        st.success("Cadastro Salvo")
 
 #---------------------------------------------------------------------------------------------------------------------
 #Style
