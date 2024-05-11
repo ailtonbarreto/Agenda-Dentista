@@ -19,7 +19,7 @@ with open("style.css") as f:
 col1, col2 = st.columns([1,1])
 
 with col1:
-    st.image("logo.png")
+    st.image("logo.png",width=100)
 
 
 with col2:
