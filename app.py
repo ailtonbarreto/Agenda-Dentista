@@ -16,7 +16,7 @@ st.set_page_config(layout="wide",initial_sidebar_state='expanded',page_icon='ðŸ¦
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html = True)
  
-col1, col2 = st.columns([1,6])
+col1, col2 = st.columns([1,10])
 
 with col1:
     st.image("logo.png",width=200)
