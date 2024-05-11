@@ -92,30 +92,32 @@ with tab2:
 #Delete Row
    
 with tab3:
-    st.subheader("❌ Cancelar Atendimento",anchor=False)
-    filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
-    
-    filtro_data = st.date_input("Data da Consultas","today",format="DD/MM/YYYY")
-    filtro_data = filtro_data.strftime("%d/%m/%Y")
-
-    opcoes = df.query('Paciente == @filtro_paciente & Data == @filtro_data')
-    
-    
-    opcoesdelete = opcoes.first_valid_index()
     col1, = st.columns(1)
+    with col1:
+        st.subheader("❌ Cancelar Atendimento",anchor=False)
+        filtro_paciente = st.selectbox('Filtro Paciente',df["Paciente"].unique())
+        
+        filtro_data = st.date_input("Data da Consultas","today",format="DD/MM/YYYY")
+        filtro_data = filtro_data.strftime("%d/%m/%Y")
+
+        opcoes = df.query('Paciente == @filtro_paciente & Data == @filtro_data')
     
-    linha1 = opcoesdelete
     
+        opcoesdelete = opcoes.first_valid_index()
+        
+        
+        linha1 = opcoesdelete
+        
 
     with col1:
         opcoes = opcoes.set_index("Paciente",inplace=False)
         st.dataframe(opcoes,use_container_width=True)
         if st.button("CANCELAR ATENDIMENTO"):
-            
+                
             ws1: Worksheet = sh.get_worksheet(0)
-        
+            
             ws1.delete_rows(int(linha1) + 2)
-        
+            
             st.success("Atendimento Cancelado Com Sucesso!")
 
 #---------------------------------------------------------------------------------------------------------------------
