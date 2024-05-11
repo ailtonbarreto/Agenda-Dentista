@@ -186,7 +186,7 @@ st.markdown(container,unsafe_allow_html=True)
 
 hidefullscreenbutton = """
     <style>
-    [data-testid="StyledFullScreenButton""]
+    [data-testid="StyledFullScreenButton"]
     {
     visibility: hidden;
     }
