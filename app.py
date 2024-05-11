@@ -156,7 +156,19 @@ with tab1:
 #Cadastro de pacientes
 
 with tab4:
-    st.title("🚧 Em Construção",anchor=False)
+    st.title("🚧 Cadastrar Paciente",anchor=False)
+    if st.button("CADASTRAR"):
+        ws: Worksheet = sh.get_worksheet(1)
+        entrada_novopaciente = st.text_input("Nome do Paciente")
+        Idade_paciente = st.number_input("Idade Do Paciente",value=None)
+        entrada_fonepaciente = st.number_input("Telefone Do Paciente",value=None)
+            
+    nova_linha = [entrada_novopaciente, entrada_fonepaciente]
+                
+            
+    ws.append_row(nova_linha)
+                
+    st.success("Agendamento Salvo")
 
 #---------------------------------------------------------------------------------------------------------------------
 #Style
