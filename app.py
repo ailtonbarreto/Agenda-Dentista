@@ -166,9 +166,9 @@ with tab4:
         nova_linha = [entrada_novopaciente, entrada_fonepaciente]
                 
             
-    ws.append_row(nova_linha)
+        ws.append_row(nova_linha)
                 
-    st.success("Agendamento Salvo")
+        st.success("Agendamento Salvo")
 
 #---------------------------------------------------------------------------------------------------------------------
 #Style
