@@ -164,7 +164,7 @@ with tab4:
         entrada_fonepaciente = st.number_input("Telefone Do Paciente",format="%.0f",value=None)
         
         if st.button("CADASTRAR"):
-            ws: Worksheet = sh.get_worksheet("D-Pacientes")
+            ws: Worksheet = sh.get_worksheet(1)
             
             novo_paciente = [entrada_novopaciente.upper(), idade_paciente, entrada_fonepaciente]
                     
