@@ -160,7 +160,7 @@ with tab4:
     with col1:
         st.subheader("🖥 Cadastrar Paciente",anchor=False)
         entrada_novopaciente = st.text_input("Nome do Paciente")
-        idade_paciente = st.number_input("Idade Do Paciente",format="%.0f")
+        idade_paciente = st.number_input("Idade Do Paciente",format="%.0f",value=None)
         entrada_fonepaciente = st.number_input("Telefone Do Paciente",format="%.0f")
         
         if st.button("CADASTRAR"):
